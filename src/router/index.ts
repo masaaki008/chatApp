@@ -12,6 +12,10 @@ initializeApp(credentials.config);
 
 const routes: Array<RouteRecordRaw> = [
     {
+        path: '/',
+        redirect: '/chats_menu'
+    },
+    {
         path: '/login',
         name: 'Login',
         component: Login
