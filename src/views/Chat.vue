@@ -137,7 +137,7 @@ export default defineComponent({
     const q = query(
         collection(db, 'chat'),
         where('chatId', '==', this.chatId),
-        orderBy('createDate'));
+        orderBy('createDate', 'desc'));
     onSnapshot(q, (snapshot) => {
       // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
       // @ts-ignore
